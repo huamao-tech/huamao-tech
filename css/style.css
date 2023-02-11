@@ -2301,6 +2301,44 @@ code {
   filter: grayscale(100%);
   filter: #808080;
 }
+.tooltip-qrcode {
+  position: relative;
+}
+.tooltip-qrcode .tooltip {
+  position: absolute;
+  z-index: 9;
+  bottom: 100%;
+  left: 50%;
+  background-color: #7a3818;
+  border-radius: 0.4rem;
+  width: 12.8rem;
+  padding: 8px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -16px);
+  transform: translate(-50%, -16px);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all;
+}
+.tooltip-qrcode .tooltip::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #7a3818;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -4px;
+  margin-bottom: -4px;
+}
+.tooltip-qrcode:hover .tooltip {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -8px);
+  transform: translate(-50%, -8px);
+}
 .index-about {
   position: relative;
   z-index: 1;
