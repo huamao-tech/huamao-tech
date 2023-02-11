@@ -2309,7 +2309,7 @@ code {
   z-index: 9;
   bottom: 100%;
   left: 50%;
-  background-color: #7a3818;
+  background-color: #212529;
   border-radius: 0.4rem;
   width: 12.8rem;
   padding: 8px;
@@ -2325,7 +2325,7 @@ code {
   display: block;
   width: 8px;
   height: 8px;
-  background-color: #7a3818;
+  background-color: #212529;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
